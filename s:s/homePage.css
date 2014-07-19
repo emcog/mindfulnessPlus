@@ -1,0 +1,337 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px dashed #3A5FCD;
+}
+
+
+
+div#calendar div#mini-clndr {
+}
+
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+ 
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+ 
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+ 
+/**** disabling Isotope CSS3 transitions ****/
+ 
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+ 
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.test-in{
+  background-color: rgba(23,67,45,.5);
+  background-size: 100px;
+}
+.test-out{
+  background-color: rgba(23,12,3,.9);
+  background-size: 10px
+  margin:1%;
+}
+
+body{
+  margin:0px;
+}
+
+/*header{
+	height: 50px;
+	background-color: #00aeef;
+  /*width:80%;
+  margin:auto;
+  margin-bottom: .2%;
+  display: inline-block;
+  /*width:100%;
+}
+
+header h1, header a {
+text-align: left;
+color:white;
+font-family: arial;
+/*padding:5px;
+text-decoration: none;
+display: inline;
+vertical-align: baseline;
+}*/
+
+.one > * {
+  vertical-align: baseline;
+  display: inline;
+  margin:0px;
+}
+
+/*.icon_twitter{
+  z-index: -1;
+  display: inline;
+}*/
+
+/*.wrapper{
+	width: 80%;
+	margin: auto;
+	/*margin-left: 1%;
+}
+
+.nav{
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+	width: 32%;
+	text-align: left;
+	margin:.2%;
+  background-color:rgba(192,192,192,.5);
+}
+
+.content {
+  text-align: justify;
+  display: inline-block;
+  width:32%;
+  background-color: rgba(192,192,192,.5);
+  margin:.2%;
+  padding: 0px;
+}
+*/
+
+
+.sub-nav{
+	padding:5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.sub-nav a:hover{
+background-color: #696969;
+display: inline-block;
+color:#ff1493;
+}
+
+.nav a{
+	display:block;
+	/*text-decoration: none;*/
+	color:black;
+}
+
+/*.nav a:hover{
+	background-color: yellow;
+}*/
+
+
+.content:hover {
+	background-color: orange;
+}
+
+.content img, iframe, .freezeframe, canvas {
+	width: 100%;
+}
+
+.content p{
+	font-family: 'Lato', sans-serif;
+  /*font-weight: 900;*/
+	padding: 0% 2% 0% 2%;
+}
+
+.content a{
+  text-decoration: none;
+}
+
+.bold{
+  font-weight: thick;
+
+}
+
+
+/* Media Queries --------- */
+
+/* smartphones portrait and landscape */
+@media only screen 
+and (min-width: 320px)
+and (max-width: 480px)
+
+{
+
+      .wrapper{
+    width: 99%;
+    margin: auto;
+    /*margin-left: 1%;*/
+  }
+
+      .content {
+    text-align: justify;
+    display: inline-block;
+    width: 99%;
+    background-color: rgba(192,192,192,.5);
+    margin:.6%;
+  }
+
+
+    .nav{
+   font-family: 'Courier New', courier, monospace;
+   display: inline-block;
+   width: 99%;
+   text-align: left;
+   margin:.6%;
+   background-color:rgba(192,192,192,.5);
+  }
+
+div #calendar {
+  width: 100%;
+  padding-top: .6%;
+  padding-bottom: .6%;
+  background: #fff;
+}
+
+}
+
+/* Tabs and Small screens --------- */
+@media only screen
+and (min-width: 481px)
+and (max-width: 850px)
+
+{
+
+      .wrapper{
+    width: 94%;
+    margin: auto;
+    /*margin-left: 1%;*/
+  }
+
+      .content {
+    text-align: justify;
+    display: inline-block;
+    width: 46%;
+    background-color: rgba(192,192,192,.5);
+    margin:.3%;
+  }
+
+
+    .nav{
+   font-family: 'Courier New', courier, monospace;
+   display: inline-block;
+   width: 46%;
+   text-align: left;
+   margin:.3%;
+   background-color:rgba(192,192,192,.5);
+  }
+
+  div #calendar {
+  width: 100%;
+  padding-top: .3%;
+  padding-bottom: .3%;
+  background: #fff;
+  }
+
+}
+
+/* Desktops and Laptops --------- */
+@media only screen
+and (min-width: 851px)
+and (max-width: 1824px)
+
+{
+
+      .wrapper{
+    width: 80%;
+    margin: auto;
+    /*margin-left: 1%;*/
+  }
+
+      .content {
+    text-align: justify;
+    display: inline-block;
+    width: 32%;
+    background-color: rgba(192,192,192,.5);
+    margin:.3%;
+  }
+
+
+    .nav{
+   font-family: 'Courier New', courier, monospace;
+   display: inline-block;
+   width: 32%;
+   text-align: left;
+   margin:.3%;
+   background-color:rgba(192,192,192,.5);
+  }
+
+    div #calendar {
+  width: 100%;
+  padding-top: .3%;
+  padding-bottom: .3%;
+  background: #fff;
+  }
+
+}
+
+
+/* Large screens --------- */
+@media only screen 
+and (min-width: 1824px)
+
+{
+      .wrapper{
+    width: 90%;
+    margin: auto;
+    /*margin-left: 1%;*/
+  }
+
+      .content {
+    text-align: justify;
+    display: inline-block;
+    width:24%;
+    background-color: rgba(192,192,192,.5);
+    margin:.3%;
+  }
+
+    .nav{
+   font-family: 'Courier New', courier, monospace;
+   display: inline-block;
+   width: 24%;
+   text-align: left;
+   margin:.3%;
+   background-color:rgba(192,192,192,.5);
+  }
+
+  div #calendar {
+  width: 100%;
+  padding-top: .3%;
+  padding-bottom: .3%;
+  background: #fff;
+  }
+
+}
