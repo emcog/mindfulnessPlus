@@ -112,17 +112,22 @@ header > * {
   }
 
 .sub-nav{
-	padding:5px;
-  padding-right: 10px;
-  padding-left: 10px;
+    margin-top: 8px;
+    margin-bottom:18px;
+	  margin-left: -20px;
 }
 
-ul{
+.sub-nav ul{
   list-style-type: none;
   margin: 0px;
 }
 
-.sub-nav li a{
+.sub-nav ul li{
+  padding-top:8px;
+}
+
+
+.sub-nav ul li a{
   transition: background-color 0.5s ease 0s;
     transition-property: background-color;
     transition-duration: 0.5s;
@@ -134,10 +139,6 @@ ul{
 background-color: #696969;
 color:#ff1493;
 }
-
-/*.sub-nav a{
-  display: block;
-}*/
 
 .nav a{
 	/*text-decoration: none;*/
