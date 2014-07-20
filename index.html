@@ -20,10 +20,10 @@
 
 		<div class="wrapper">
 
-			<div class="nav tips tutorials science tools buster 5s 30s 90s 300s video loop text audio interact links"> <!--remember to either a) move nav outside of <wrapper> or b) apply all filters to <nav> !--> 
+			<div class="nav tips tutorials science tools buster 5s 30s 90s 300s video loop text audio interact links"> <!--remember to either a) move nav outside of <wrapper> or b) apply all filters to <nav> !-->
 
 		<header>
-			<h1>M+</h1>
+			<a href="*"><h1>M+</h1></a>
 				<a class="icon" target="_blank" href="http://www.twitter.com"><img src="images/Twitter_logo_white.
 				svg"></a>
 
@@ -31,17 +31,17 @@
 
 				<div class="sub-nav">
 				<ul>
-					<li><a href="#" data-filter="*" class="current">All</a></li>
+					<!---<li><a href="#" data-filter="*" class="current">All</a></li>-->
 					<li><a href="#" data-filter=".tips">Boot strap mindfulness</a></li>
 					<li><a href="#" data-filter=".buster">Myth busters</a></li>
 					<li><a href="#" data-filter=".science">Science</a></li>
 					<li><a href="#" data-filter=".tools">Tools</a></li>
 					<li><a href="#" data-filter=".tutorials">Tutorials</a></li>
-					<li><a href="#" data-filter=".links">Links</a></li>				
+					<li><a href="#" data-filter=".links">Links</a></li>
 				</div>
 
   		  <div id="calendar">
-			  
+
 			  <div id="mini-clndr">
 				  <script id="mini-clndr-template" type="text/template">
 
@@ -73,22 +73,22 @@
 
 					  </script>
 				  </div>
-  
+
 		  </div>
-  
+
 			</div>
-  
+
 			<div class="content video 30s"><a href="interactive1.html" class="fancybox fancybox.iframe"><img src="images/standing1.jpg"></a><p>two</p></div>
-			
+
 			<div class="content links">
 			<iframe src="//player.vimeo.com/video/55073825?badge=0" width="500" height="213" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<p>three</p></div>	
-			
+			<p>three</p></div>
+
 			<div class="content buster"><canvas data-processing-sources="processing/MP_emptyMind_interactiveGif2.pde" alt="/images/rollOverGif_emptyingMind/EmptyingMind0.jpg"></canvas>
 			<p>Mindfulness isn't about emptying your mind but getting to know the junk inside.</p></div>
-			
+
 			<div class="content tools interact"><a href="interactive1.html" class="fancybox fancybox.iframe"><img src=images/Screenshot1.png/><p>interactive processing sketch</p></a></div>
-			
+
 		</div>
 
 <script type="text/javascript">
@@ -104,11 +104,11 @@ $(window).load(function(){
             queue: false
         }
     });
- 
+
     $('.nav a').click(function(){
         $('.nav .current').removeClass('current');
         $(this).addClass('current');
- 
+
         var selector = $(this).attr('data-filter');
         $container.isotope({
             filter: selector,
@@ -119,13 +119,13 @@ $(window).load(function(){
             }
          });
          return false;
-    }); 
+    });
 });
 
 </script>
 
 
-  
+
 <script src="javaScript/json2.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
 <script src= "javaScript/moment-2.5.1.js"></script>
@@ -134,7 +134,7 @@ $(window).load(function(){
 <script src="javaScript/jquery.mousewheel-3.0.6.pack.js"></script>
 <script type="text/javascript">
 $('document').ready(function() {
-	$(".fancybox").fancybox({});	
+	$(".fancybox").fancybox({});
 });
 </script>
 </body>
