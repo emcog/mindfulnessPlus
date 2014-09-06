@@ -7,26 +7,48 @@ canvas {
   margin: auto;
 }
 
+
+
+.title{
+  font-family: georgia;
+  font-style: lighter;
+  text-align: left;
 }
 
-.title {
-  font-family:verdana;
+/*h1 {
+  font-family: verdana;
   text-align: center;
-}
+}*/
 
 
 h2 {
-  font-family:verdana;
-  text-align: center; 
+  font-family:georgia;
+  text-align: center;
 }
 
-h3 {
-  font-family:verdana; 
+/*h3 {
+  font-family:verdana;
   text-align:center;
+}*/
+
+h3 {
+  font-family: georgia;
+  line-height: 1.25em;
+  margin-left: 6%;
+  margin-right: 6%;
 }
 
 p {
+  font-family: arial, sans-serif;
+  font-size: 12pt;
+  line-height: 1.25em;
   text-align: left;
+}
+
+p.footnote{
+  margin-top: -2px;
+  font-size: 8pt;
+  font-family: verdana;
 }
 
 a {

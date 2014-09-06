@@ -77,7 +77,7 @@ header{
   display: inline-block;
 }
 
-header a h1 {
+header ul li a h1 {
 text-align: left;
 color:white;
 font-family: arial;
@@ -85,12 +85,31 @@ text-decoration: none;
 background-color: #00AEEF;
 font-size: 40px;
 margin:0px;
+/*margin-top:10px;*/
+padding-right:20%;
 display: inline-block;
 }
 
 header {
     width:100%;
-    position: relative;
+    /*background-color: #00AEEF;*/
+}
+
+header ul{
+  margin-top: 0px;
+}
+
+header ul li{
+  display: inline;
+}
+
+.one{
+  margin-left: -20px;
+}
+
+/*change class name. put this class inside media queries. change the % for each media query.*/
+/*.two{
+  margin-left: 40%;*/
 }
 
 header > * {
